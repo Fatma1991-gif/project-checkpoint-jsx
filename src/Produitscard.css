@@ -1,0 +1,109 @@
+/* ----- Carte du produit ----- */
+.product-card {
+  background-color: #fff;
+  border-radius: 16px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet lorsque la souris passe sur la carte */
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- Image du produit ----- */
+.product-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+/* Zoom sur l’image au survol */
+.product-card:hover .product-image {
+  transform: scale(1.07);
+}
+
+/* ----- Nom du produit ----- */
+.product-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #222;
+  margin: 10px 0 6px;
+}
+
+/* ----- Description du produit ----- */
+.product-description {
+  font-size: 0.95rem;
+  color: #555;
+  min-height: 45px;
+}
+
+/* ----- Prix du produit ----- */
+.product-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #25d545;
+  margin: 10px 0;
+}
+
+/* ----- Bouton Commander ----- */
+.product-button {
+  background-color: #2560d5;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Effet du bouton au survol */
+.product-button:hover {
+  background-color: #1743a3;
+  transform: scale(1.05);
+}
+
+/* 🌍 ----- Design Responsive ----- */
+
+/* Pour les petits écrans (téléphones) */
+@media (max-width: 600px) {
+  .product-card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .product-image {
+    height: 180px;
+  }
+
+  .product-name {
+    font-size: 1.1rem;
+  }
+
+  .product-description {
+    font-size: 0.9rem;
+  }
+
+  .product-price {
+    font-size: 1rem;
+  }
+
+  .product-button {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Pour les écrans moyens (tablettes) */
+@media (max-width: 900px) {
+  .product-card {
+    width: 45%;
+  }
+}
